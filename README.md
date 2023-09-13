@@ -12,22 +12,39 @@ An object-oriented approach to creating a game application based on the example 
 ![image](https://github.com/Sazerfai/Creating_game_based_on_Mario_Brothers/assets/79790554/8b582f7f-f45c-4656-b974-98c69dd4cda1)
 
 Поля базового класса Object:
+
 •	dx – ускорение объекта по X;
+
 •	dy – ускорение объекта по Y;
+
 •	x – координата объекта по оси Х; 
+
 •	y – координата объекта по оси Y;
+
 •	speed – скорость объекта;
+
 •	w – ширина вырезания спрайта;
+
 •	h – высота вырезания спрайта;
+
 •	health – уровень здоровья;
+
 •	life – два состояния: жив/мертв;
+
 •	isMove – отвечает за движение персонажа, два значения bool(1, 0): двигается/не двигается;
+
 •	onGround – нахождение на земле;
+
 •	texture – SFML текстура;
+
 •	sprite –SFML спрайт;
+
 •	name – имя объекта.
+
  Методы базового класса Object:
+ 
 •	Object (Image&, String, float, float, int, int) – конструктор по умолчанию;
+
 •	~ Object () – деструктор;
 
 Класс Player является наследником класса Object. У класса игрока появляется поле playerScore, которое отвечает за бонусы и очки, и state, которое отвечает за состояние игрока(вправо, влево и т.д.).
