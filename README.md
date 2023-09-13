@@ -8,6 +8,7 @@ An object-oriented approach to creating a game application based on the example 
 
 В начале, проектируем базовый класс, содержащий поля, общие для класса-наследников.
 В данной работе класс Object является базовым классом.
+
 ![image](https://github.com/Sazerfai/Creating_game_based_on_Mario_Brothers/assets/79790554/8b582f7f-f45c-4656-b974-98c69dd4cda1)
 
 Поля базового класса Object:
