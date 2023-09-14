@@ -2,10 +2,12 @@
 #include <SFML/Graphics.hpp>
 using namespace sf;
 
-sf::View view;//объявили sfml объект "вид", который и является камерой
+sf::View view;
+View getplayercoordinateforview(float x, float y) { //С„СѓРЅРєС†РёСЏ РґР»СЏ СЃС‡РёС‚С‹РІР°РЅРёСЏ РєРѕРѕСЂРґРёРЅР°С‚ РёРіСЂРѕРєР°
+	float tempX = x; float tempY = y;//СЃС‡РёС‚С‹РІР°РµРј РєРѕРѕСЂРґ РёРіСЂРѕРєР° Рё РїСЂРѕРІРµСЂСЏРµРј РёС…, С‡С‚РѕР±С‹ СѓР±СЂР°С‚СЊ РєСЂР°СЏ
 
-void getplayercoordinateforview(float x, float y) { //функция для считывания координат игрока
-	view.setCenter(x + 100, y);
+	if (x < 330) tempX = 330;
+	view.setCenter(tempX +300 , 304); 
+	return view;
 
-}
-
+} 
