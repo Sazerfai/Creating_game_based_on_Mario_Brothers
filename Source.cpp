@@ -2,7 +2,6 @@
 #include <iostream>
 #include <cstdlib>
 #include "Object.cpp"
-#include "Player.cpp"
 #include "Camera.h"
 
 using namespace sf;
